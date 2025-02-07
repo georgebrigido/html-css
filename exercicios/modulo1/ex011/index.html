@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir um audio</p>
+    <audio preload="metadata"> <!--Isso serve para impedir do audio ser carregado ao abrir a pagina, carregando-o apenas no momento que der o play.-->
+        <source src="midia/Cris MJ - No Ponga Excusas (Video Oficial)(M4A_128K).m4a" type="audio/m4a">
+    </audio>
+    <!-- melhores formatos mp3 wav ogg-->
+
+
+
+</body>
+</html> 

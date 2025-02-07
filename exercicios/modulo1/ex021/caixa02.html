@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: darkcyan;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: darkgray;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(136, 136, 136);
+            padding: 3px;
+            box-shadow: -1px 2px 11px rgba(0, 0, 0, 0.507);
+        }
+
+        nav > a {
+            text-decoration: none;
+            padding-right: 30px;
+            color: white;
+            font-weight: bold;
+            
+        }
+
+        nav > a:hover{
+            color: darkgray;
+            text-decoration: underline;
+        }
+        main{
+            background-color: darkkhaki;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 20px 20px 20px;
+            /*
+            border-radius: 20px 40px;
+            */
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(100, 100, 100);
+        }
+        footer{
+            background-color: darkolivegreen;
+            text-align: center;
+        
+        }
+        footer > h2{
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Grouping tags semanticas:</h1>
+        <h1>Header - Cabeçalho</h1>
+        
+        <h2>Grouping tags</h2>
+        <p>div e span ( div é block e span é inline) </p>
+        
+        <nav>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Main - Conteudo principal</h2>
+        <section id="assuntos">
+            <article>
+                <h3>Noticia sobre o brasil</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea enim atque ullam laborum minus fugit mollitia suscipit accusantium ex debitis assumenda perspiciatis harum dolorum officiis aperiam, recusandae quidem exercitationem doloremque?</p>
+                <aside>Artigo escrito por</aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea enim atque ullam laborum minus fugit mollitia suscipit accusantium ex debitis assumenda perspiciatis harum dolorum officiis aperiam, recusandae quidem exercitationem doloremque?</p>
+                <aside>Artigo escrito por</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2>Footer - Rodape</h2>
+        <p>Desenvolvido pelo curso em video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
