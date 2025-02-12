@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        td , th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        tr:nth-child(2n-1){ /*Siginifica de duas em duas ele aplica essa config (2n-1 e 2n) ou (even e odd)*/
+            background-color: lightgray;
+        }
+        thead > tr > th{ /*Cabeçalho fixo da tabela*/
+            position: sticky;
+            top: -1px; 
+            background-color: darkgrey;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <table>
+        <caption>Populaçao das unidades federativas</caption>
+        <thead> <!--Sao os temas-->
+            <tr>
+                <th scope="col">Estado</th> <!--Col significa que é o titulo da coluna-->
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody> <!--Sao os dados, ou nao, pois tbm pode ter th do lado , faz assim: tudo que diz respeito ao th é dado-->
+            <tr>
+                <td>São Paulo</td>
+                <td>4598434340</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>4598434340</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>4598434340</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Habitantes</th> <!--row significa que é o titulo da linha-->
+                <td>12544548674</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
