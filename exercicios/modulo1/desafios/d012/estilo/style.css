@@ -56,6 +56,9 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section >p {
+    padding-bottom: 1em;
+}
 
 section.normal{
     background-color: white;
@@ -63,14 +66,29 @@ section.normal{
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.562);
     display: inline-block; /*pra ficar do tamanho do conteudo que ta dentro dele*/
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 section.imagem {
     background-color: lightgray;
     color: black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
+    background-attachment: fixed; /* a foto fica ali atras fixo*/
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+} 
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
 }
 footer{
     background-color: black;
