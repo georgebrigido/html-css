@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; transforma tudo em upper*/
+    font-variant: small-caps; /*todas as letras ficam maiusculas mas as iniciais ficam um pouquinho maior*/    
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh; /*dessa forma os espaços de cima e baixo do paragrafo ficam se adapatando ao tamanho. Essas coisas de responsividade usam vh e vw bastante*/
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 400px;
+}
+
+section.imagem {
+    background-color: lightgray;
+    color: black;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding-bottom: 10px;
+}
