@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana , Geneva;
+    --fonte2: 'Passion One', serif;
+    --fonte3: 'Sriracha', serif;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -8,18 +16,22 @@
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1)
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+
 }
 
 header > h1{
     padding-top: 50px;
     /*text-transform: uppercase; transforma tudo em upper*/
     font-variant: small-caps; /*todas as letras ficam maiusculas mas as iniciais ficam um pouquinho maior*/    
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p{
@@ -41,6 +53,8 @@ section{
     padding-bottom: 10vh; /*dessa forma os espaços de cima e baixo do paragrafo ficam se adapatando ao tamanho. Essas coisas de responsividade usam vh e vw bastante*/
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -50,7 +64,8 @@ section.normal{
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
+    display: inline-block; /*pra ficar do tamanho do conteudo que ta dentro dele*/
+    padding: 5px;
 }
 
 section.imagem {
