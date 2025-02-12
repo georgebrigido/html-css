@@ -9,10 +9,19 @@
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-image: center center;
-            background-repeat: no-repeat;
+            background-position: center center;
+            background-repeat: repeat-y; /*dessa forma o papel de parede ta quebrando ele ainda vai ensinar a fazer a imagem acompanhar*/
             background-size: cover; /*contain a imagem fica 100% exibido*/
             /*e cover ele vai cobrir a tela com o background sem picotar ele*/
+
+            background-attachment: fixed; /*o backgound fica fixo se eu rolar o conteudo, o background nao acompanha o conteudo*/
+
+            /*Short hand background
+            color > image > position > repeat > [size](nao ta funcionando) > attachment 
+
+            background: black center url('imagens/wallpaper002.jpg') center center repeat-y [cover] fixed;
+            
+            */
         }
         main{
             background-color: white;
@@ -27,7 +36,7 @@
 <body>
     <main>
         <h1>Teste imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error facere a non inventore accusamus expedita ab totam possimus. Fugiat laborum optio ab rerum nam consequatur facere sunt eum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate qui sit dignissimos officiis, atque corporis explicabo dolor unde veniam sed in culpa neque vel nulla dicta nesciunt officia! Exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae repellat nostrum et minima quos qui suscipit optio rerum, reiciendis eaque natus similique dignissimos eius dolor aspernatur doloribus minus vel.</p>
     </main>
 </body>
 </html>
