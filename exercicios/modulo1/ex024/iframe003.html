@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 94vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, molestias consequuntur. Nostrum fugiat distinctio, id laudantium nisi alias minus dignissimos, quia, corrupti commodi sequi fuga perferendis culpa impedit mollitia recusandae?</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira</a></li>
+        <li><a href="pag002.html" target="frame">Segunda</a></li>
+        <li><a href="pag003.html" target="frame">Terceira</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, reprehenderit molestias iste, enim voluptatibus tempora neque itaque assumenda earum sint harum a corrupti quae deleniti ratione ipsum accusamus atque quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident, vel consequuntur repellat libero porro ullam maxime voluptate veniam officia, necessitatibus rerum eaque praesentium ipsum commodi odio repellendus facilis iusto?</p>
+
+    <iframe id="tela" name="frame" scrolling="yes" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, reprehenderit molestias iste, enim voluptatibus tempora neque itaque assumenda earum sint harum a corrupti quae deleniti ratione ipsum accusamus atque quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident, vel consequuntur repellat libero porro ullam maxime voluptate veniam officia, necessitatibus rerum eaque praesentium ipsum commodi odio repellendus facilis iusto?</p><img src='bugdroid.png' >"></iframe>
+    <!--Pode ser que o mecanismo de busca do google não consiga acessar o conteudo do iframe.
+
+     Assim como os softwares leitores de tela. 
+     
+     e tbm problemas de usabilidade ao navegar entre paginas
+
+     e por questoes de segurança pode não ser seguro
+     -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est consequatur vero aliquid eius vitae odio. Dolor nesciunt, minima, voluptatibus aliquid, pariatur reprehenderit voluptates in fuga temporibus harum quasi aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ullam suscipit aperiam labore libero vel laboriosam impedit eveniet sed doloremque soluta accusamus, iusto nesciunt sit deserunt perferendis, veritatis obcaecati cupiditate!</p>
+</body>
+</html>
