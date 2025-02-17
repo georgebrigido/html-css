@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top,#643217,#4952a0);
+    }
+    section#login{
+        width: 90vw;
+        height: 300px;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;  /*height de 100% da section pai*/
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top,#643217,#4952a0);
+    }
+    section#login{
+        width: 950px;
+    }
+    section#login > div#imagem{ /*se eu nao coloacar o section# login pra mecher no imagem ele nao pega o 100% do tamanho da section*/
+        float: right;
+        width: 50%;
+        height: 100%;
+
+    }
+    section#login > div#formulario{
+        float: left;
+        width: 50%;
+    }
+    div#fromulario > h1{
+        font-size: 2em;
+    }
+    div#formulario > p{
+        font-size: 1.2em;
+    }
+}

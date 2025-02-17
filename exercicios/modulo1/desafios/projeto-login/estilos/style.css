@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*Paleta de cores
+Azul: #4952a0
+laranja: #a1491b
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; /*a borda faz parte da conta de largura*/
+}
+body, html{
+    background-color: #4952a0;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    overflow: hidden; /*tudo que ta por fora da bora fica escondido*/
+
+
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+
+    transform: translate(-50%,-50%);       /*sempre deixar transformações e animações no final das definições*/
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    background: #a1491b url(../imagens/patt.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+div#formulario{
+    display: block;
+    padding: 20px;
+}
+div#formulario > h1{
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
+}
+form > div.campo{
+    background-color: rgb(98, 93, 172);
+    border: 2px solid rgb(98, 93, 172);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+div.campo > label{
+    display: none;
+
+}
+div.campo > span{
+    font-size: 1.5em;
+    width: 45px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #c0c0c0;
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    width: calc(100% - 50px);
+    transform:translateY(-4px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+
+}
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #4952a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    background-color: #d48458;
+    border: 1px solid #a1491b;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #a1491b;
+}
+         
+
