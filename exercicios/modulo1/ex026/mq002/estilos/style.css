@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* configs gerais*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html , body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    color: white;
+    text-align: 3px 3px 0px #233eff;
+    padding: 10px;
+}
